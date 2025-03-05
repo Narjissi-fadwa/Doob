@@ -203,6 +203,7 @@ footer{
     flex-direction: column;
     align-items: center;
     gap: 2vh;
+    padding: 2vh;
 }
 footer>p{
     color: rgb(244, 250, 254);
@@ -221,4 +222,20 @@ footer>div>a{
 }
 footer>.icons{
     color: rgb(244, 250, 254);
+}
+@media (max-width:480px) {
+    .section2{
+        flex-direction: column;
+
+    }
+    .section2>.child2-1 , .section2>.child2-2 , .section2>.child2-3{
+        width: 100%;
+        align-items: center;
+    }
+    .section2>.child2-1>button , .section3>button{
+        width: 80%;
+    }
+    .section2>.child2-1>h2{
+        text-align: center;
+    }
 }
