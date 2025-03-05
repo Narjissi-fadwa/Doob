@@ -16,7 +16,6 @@ nav{
     display: flex;
     align-items: center;
     gap: 4vw;
-
 }
 nav >a{
     color: rgb(49, 69, 132);
