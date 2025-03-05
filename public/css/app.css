@@ -43,6 +43,52 @@ nav>a{
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-size: x-large;
 }
+
+
+.section1{
+    display: flex;
+    padding: 4vh 10vw;
+    gap: 10vw;
+
+}
+.section1>.img-s1>img{
+    width: 40vw;
+    height: 40vh;
+}
+.section1>.left-s1{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 6vh;
+}
+.section1>.left-s1>h1{
+    width: 30vw;
+    color:  #020296;
+
+}
+.section1>.left-s1>p{
+    width: 30vw;
+    color: #020296b5;
+}
+.section1>.left-s1>.b-s1{
+    display: flex;
+    align-items: center;
+    gap: 3vw;
+}
+.section1>.left-s1>.b-s1>button{
+    border: none;
+    box-shadow: 4px 2px 5px;
+    padding: 3vh 4vw ;
+    background-color: red;
+    border-radius: 30px;
+}
+.section1>.left-s1>.b-s1>button>span{
+    color: white;
+}
+.section1>.left-s1>.b-s1>button~a{
+    font-size: larger;
+    color: #020296;
+}
 .section2{
     display: flex;
     justify-content: center;
