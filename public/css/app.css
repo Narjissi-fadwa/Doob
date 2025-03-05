@@ -48,7 +48,7 @@ nav>a{
     justify-content: center;
     gap: 2vw;
     align-items: center;
-    padding: 2vh 20vw;
+    padding: 2vh 10vw;
 }
 .section2>.child2-1{
     display: flex;
@@ -60,13 +60,13 @@ nav>a{
     width: 15vw;
     padding: 2vh 2vw;
 }
-.section2>.child2-1>h2{
-    color: #020296;
+.section2>.child2-1>h2 , .section3>h2{
+    color: rgb(49, 69, 132);
 
 }
 .section2>.child2-1>button{
     border-radius: 25px;
-    background-color: red;
+    background-color: rgb(255, 57, 70);
     border: none;
     color: white;
     padding: 1.5vh 1.5vw;
@@ -83,9 +83,99 @@ nav>a{
     justify-content: center;
 }
 .section2>.child2-2>h3 , .section2>.child2-3>h3{
-    color:  #020296;
+    color:  rgb(49, 69, 132);
 
 }
 .section2>.child2-2>p , .section2>.child2-3>p{
-    color:  #020296b5;  
+    color:  rgb(49, 69, 132)b5;  
+}
+.section3{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 2vh;
+    align-items: start;
+    padding: 2vh 15vw;
+
+}
+.section3>a{
+    text-decoration: none;
+    color: rgb(255, 57, 70);
+    font-weight: bold;
+    
+}
+.section3>form{
+    display: grid;
+    grid-template-areas: 
+    'email subject'
+    'message message' ;
+    gap: 1rem;
+   
+}
+.section3>form>.email{
+    grid-area: email;
+}
+.section3>form>.subject{
+    grid-area: subject;
+}
+.section3>form>input{
+    background-color: rgb(244, 250, 254);
+    width: 34vw;
+    height: 3rem;
+    border: none;
+    padding: 1vh 1vw;
+}
+.section3>form>input::placeholder{
+    color: rgb(49, 69, 132);
+    opacity: 1;
+    font-weight: bold;
+}
+.section3>form>textarea{
+    height: 8rem;
+    border: none;
+    background-color: rgb(244, 250, 254);
+    grid-area: message;
+    color: rgb(49, 69, 132);
+    font-weight: bold;
+    padding: 1vh 1vw;
+}
+.section3>form>textarea:focus{
+    outline: none;
+}
+.section3>form>input:focus{
+    outline: none;
+}
+.section3>button{
+    border-radius: 25px;
+    background-color: rgb(255, 57, 70);
+    border: none;
+    color: white;
+    padding: 1.5vh 1.5vw;
+    width: fit-content;
+    margin: 0 auto;
+}
+footer{
+    background-color: rgb(49, 69, 132);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2vh;
+}
+footer>p{
+    color: rgb(244, 250, 254);
+}
+footer>h1{
+    color: rgb(255, 57, 70);
+}
+footer>div{
+    display: flex;
+    gap: 1rem;
+    
+}
+footer>div>a{
+    text-decoration: none;
+    color:  rgb(244, 250, 254);
+}
+footer>.icons{
+    color: rgb(244, 250, 254);
 }
