@@ -12,18 +12,14 @@ header{
     padding: 10vh 10vw;
 }
 
-.logo{
-    border-bottom: 10px solid red;
-}
-
 nav{
     display: flex;
     align-items: center;
     gap: 4vw;
 
 }
-nav>a{
-    color: #020296;
+nav >a{
+    color: rgb(49, 69, 132);
     font-size: larger;
     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
@@ -36,7 +32,7 @@ nav>a{
 }
 
 .c-us>span{
-    color: red;
+    color: rgb(255, 57, 70);
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-size: x-large;
 }
@@ -60,12 +56,12 @@ nav>a{
 }
 .section1>.left-s1>h1{
     width: 30vw;
-    color:  #020296;
+    color:  rgb(49, 69, 132);
 
 }
 .section1>.left-s1>p{
     width: 30vw;
-    color: #020296b5;
+    color: rgb(49, 69, 132)b5;
 }
 .section1>.left-s1>.b-s1{
     display: flex;
@@ -76,7 +72,7 @@ nav>a{
     border: none;
     box-shadow: 4px 2px 5px;
     padding: 3vh 4vw ;
-    background-color: red;
+    background-color: rgb(255, 57, 70);
     border-radius: 30px;
 }
 .section1>.left-s1>.b-s1>button>span{
@@ -84,7 +80,7 @@ nav>a{
 }
 .section1>.left-s1>.b-s1>button~a{
     font-size: larger;
-    color: #020296;
+    color: rgb(49, 69, 132);
 }
 .section2{
     display: flex;
@@ -223,7 +219,16 @@ footer>div>a{
 footer>.icons{
     color: rgb(244, 250, 254);
 }
+#menu , label{
+    display: none;
+}
 @media (max-width:480px) {
+    label{
+        display: block;
+    }
+    label>svg{
+        fill: rgb(49, 69, 132);
+    }
     .section2{
         flex-direction: column;
 
@@ -237,5 +242,41 @@ footer>.icons{
     }
     .section2>.child2-1>h2{
         text-align: center;
+    }
+    nav{
+        width: 20%;
+        height: 100vh;
+        right: -100%;
+        flex-direction: column;
+        position: fixed;
+        background-color: white;
+        align-items: start;
+        justify-content: start; 
+        padding: 10vh; 
+    }
+    .c-t{
+        color: rgb(49, 69, 132);
+    }
+    .c-us{
+        display: none;
+    }
+    #menu{
+        display: none;
+    }
+    #menu:checked ~ nav{
+        right: 0;
+        top:0;
+    }
+    .close{
+        align-self: end;
+    }
+    .section1{
+        flex-direction: column;
+    }
+    .section1 > .left-s1 , .section1 > .left-s1>h1 , .section1 > .left-s1>p{
+        width: 100%;
+    }
+    .section1 > .img-s1 >img{
+        width: 100%;
     }
 }
